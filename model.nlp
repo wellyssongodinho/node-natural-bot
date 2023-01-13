@@ -1,0 +1,951 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "tchau": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "cuid,se,tchau": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "goodby": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "bye,cuid,se": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "mais,ok,tard,vej,voc": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "mais,okay,tard,vej,voc": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "dev,ir": {
+            "intent": "saudacoes.tchau",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "saudacoes.ola",
+            "domain": "default"
+          },
+          "oi": {
+            "intent": "saudacoes.ola",
+            "domain": "default"
+          },
+          "hell": {
+            "intent": "saudacoes.ola",
+            "domain": "default"
+          },
+          "bom,dia": {
+            "intent": "saudacoes.ola",
+            "domain": "default"
+          },
+          "boa,tard": {
+            "intent": "saudacoes.ola",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "saudacoes.ola",
+            "domain": "default"
+          },
+          "bem,tud": {
+            "intent": "saudacoes.ola",
+            "domain": "default"
+          },
+          "enderec,o,qual": {
+            "intent": "localizacao.endereco",
+            "domain": "default"
+          },
+          "algum,referenc,tem": {
+            "intent": "localizacao.referencia",
+            "domain": "default"
+          },
+          "a,cidad,qual": {
+            "intent": "localizacao.cidade",
+            "domain": "default"
+          },
+          "estad,o,qual": {
+            "intent": "localizacao.estado",
+            "domain": "default"
+          },
+          "o,pais,qual": {
+            "intent": "localizacao.pais",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "saudacoes.tchau": "default",
+          "saudacoes.ola": "default",
+          "localizacao.endereco": "default",
+          "localizacao.referencia": "default",
+          "localizacao.cidade": "default",
+          "localizacao.estado": "default",
+          "localizacao.pais": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "tchau",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "tchau se cuide",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "tchau tchau",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "tchau tchau se cuide",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye se cuide",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye se cuide",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "ok vejo você mais tarde",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "okay vejo você mais tarde",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "devo ir",
+            "intent": "saudacoes.tchau"
+          },
+          {
+            "domain": "default",
+            "utterance": "olá",
+            "intent": "saudacoes.ola"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi",
+            "intent": "saudacoes.ola"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "saudacoes.ola"
+          },
+          {
+            "domain": "default",
+            "utterance": "bom dia",
+            "intent": "saudacoes.ola"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa tarde",
+            "intent": "saudacoes.ola"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa noite",
+            "intent": "saudacoes.ola"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bem",
+            "intent": "saudacoes.ola"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o endereco",
+            "intent": "localizacao.endereco"
+          },
+          {
+            "domain": "default",
+            "utterance": "tem alguma referencia",
+            "intent": "localizacao.referencia"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual a cidade",
+            "intent": "localizacao.cidade"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o estado",
+            "intent": "localizacao.estado"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o pais",
+            "intent": "localizacao.pais"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "tchau": 1,
+              "se": 1,
+              "cuid": 1,
+              "goodby": 1,
+              "bye": 1,
+              "ok": 1,
+              "vej": 1,
+              "voc": 1,
+              "mais": 1,
+              "tard": 1,
+              "okay": 1,
+              "dev": 1,
+              "ir": 1,
+              "ola": 1,
+              "oi": 1,
+              "hell": 1,
+              "bom": 1,
+              "dia": 1,
+              "boa": 1,
+              "noit": 1,
+              "tud": 1,
+              "bem": 1,
+              "qual": 1,
+              "o": 1,
+              "enderec": 1,
+              "tem": 1,
+              "algum": 1,
+              "referenc": 1,
+              "a": 1,
+              "cidad": 1,
+              "estad": 1,
+              "pais": 1
+            },
+            "intents": {
+              "saudacoes.tchau": 1,
+              "saudacoes.ola": 1,
+              "localizacao.endereco": 1,
+              "localizacao.referencia": 1,
+              "localizacao.cidade": 1,
+              "localizacao.estado": 1,
+              "localizacao.pais": 1
+            },
+            "intentFeatures": {
+              "saudacoes.tchau": {
+                "tchau": 1,
+                "se": 1,
+                "cuid": 1,
+                "goodby": 1,
+                "bye": 1,
+                "ok": 1,
+                "vej": 1,
+                "voc": 1,
+                "mais": 1,
+                "tard": 1,
+                "okay": 1,
+                "dev": 1,
+                "ir": 1
+              },
+              "saudacoes.ola": {
+                "ola": 1,
+                "oi": 1,
+                "hell": 1,
+                "bom": 1,
+                "dia": 1,
+                "boa": 1,
+                "tard": 1,
+                "noit": 1,
+                "tud": 1,
+                "bem": 1
+              },
+              "localizacao.endereco": {
+                "qual": 1,
+                "o": 1,
+                "enderec": 1
+              },
+              "localizacao.referencia": {
+                "tem": 1,
+                "algum": 1,
+                "referenc": 1
+              },
+              "localizacao.cidade": {
+                "qual": 1,
+                "a": 1,
+                "cidad": 1
+              },
+              "localizacao.estado": {
+                "qual": 1,
+                "o": 1,
+                "estad": 1
+              },
+              "localizacao.pais": {
+                "qual": 1,
+                "o": 1,
+                "pais": 1
+              }
+            },
+            "featuresToIntent": {
+              "tchau": [
+                "saudacoes.tchau"
+              ],
+              "se": [
+                "saudacoes.tchau"
+              ],
+              "cuid": [
+                "saudacoes.tchau"
+              ],
+              "goodby": [
+                "saudacoes.tchau"
+              ],
+              "bye": [
+                "saudacoes.tchau"
+              ],
+              "ok": [
+                "saudacoes.tchau"
+              ],
+              "vej": [
+                "saudacoes.tchau"
+              ],
+              "voc": [
+                "saudacoes.tchau"
+              ],
+              "mais": [
+                "saudacoes.tchau"
+              ],
+              "tard": [
+                "saudacoes.tchau",
+                "saudacoes.ola"
+              ],
+              "okay": [
+                "saudacoes.tchau"
+              ],
+              "dev": [
+                "saudacoes.tchau"
+              ],
+              "ir": [
+                "saudacoes.tchau"
+              ],
+              "ola": [
+                "saudacoes.ola"
+              ],
+              "oi": [
+                "saudacoes.ola"
+              ],
+              "hell": [
+                "saudacoes.ola"
+              ],
+              "bom": [
+                "saudacoes.ola"
+              ],
+              "dia": [
+                "saudacoes.ola"
+              ],
+              "boa": [
+                "saudacoes.ola"
+              ],
+              "noit": [
+                "saudacoes.ola"
+              ],
+              "tud": [
+                "saudacoes.ola"
+              ],
+              "bem": [
+                "saudacoes.ola"
+              ],
+              "qual": [
+                "localizacao.endereco",
+                "localizacao.cidade",
+                "localizacao.estado",
+                "localizacao.pais"
+              ],
+              "o": [
+                "localizacao.endereco",
+                "localizacao.estado",
+                "localizacao.pais"
+              ],
+              "enderec": [
+                "localizacao.endereco"
+              ],
+              "tem": [
+                "localizacao.referencia"
+              ],
+              "algum": [
+                "localizacao.referencia"
+              ],
+              "referenc": [
+                "localizacao.referencia"
+              ],
+              "a": [
+                "localizacao.cidade"
+              ],
+              "cidad": [
+                "localizacao.cidade"
+              ],
+              "estad": [
+                "localizacao.estado"
+              ],
+              "pais": [
+                "localizacao.pais"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "tchau",
+                "se",
+                "cuid",
+                "goodby",
+                "bye",
+                "ok",
+                "vej",
+                "voc",
+                "mais",
+                "tard",
+                "okay",
+                "dev",
+                "ir",
+                "ola",
+                "oi",
+                "hell",
+                "bom",
+                "dia",
+                "boa",
+                "noit",
+                "tud",
+                "bem",
+                "qual",
+                "o",
+                "enderec",
+                "tem",
+                "algum",
+                "referenc",
+                "a",
+                "cidad",
+                "estad",
+                "pais"
+              ],
+              "intents": [
+                "saudacoes.tchau",
+                "saudacoes.ola",
+                "localizacao.endereco",
+                "localizacao.referencia",
+                "localizacao.cidade",
+                "localizacao.estado",
+                "localizacao.pais"
+              ],
+              "perceptrons": [
+                [
+                  9.555848121643066,
+                  0.037404946982860565,
+                  0.037404946982860565,
+                  9.259510040283203,
+                  9.532456398010254,
+                  1.434788465499878,
+                  2.8452630043029785,
+                  2.8452630043029785,
+                  2.8452630043029785,
+                  -0.3667726516723633,
+                  1.4101608991622925,
+                  4.788443565368652,
+                  4.788443565368652,
+                  -4.539388656616211,
+                  -4.510214328765869,
+                  -4.480140686035156,
+                  -2.331650972366333,
+                  -2.331650972366333,
+                  -4.273873805999756,
+                  -1.031443476676941,
+                  -2.329057455062866,
+                  -2.329057455062866,
+                  -2.6131932735443115,
+                  -1.5870647430419922,
+                  -0.6225732564926147,
+                  -1.5545066595077515,
+                  -1.5545066595077515,
+                  -1.5545066595077515,
+                  -1.025843620300293,
+                  -1.025843620300293,
+                  -0.47860467433929443,
+                  -0.463411808013916,
+                  4.665979602661818
+                ],
+                [
+                  -5.855509281158447,
+                  -1.2640074491500854,
+                  -1.2640074491500854,
+                  -5.507171630859375,
+                  -5.8125786781311035,
+                  -1.127760410308838,
+                  -2.230128288269043,
+                  -2.230128288269043,
+                  -2.230128288269043,
+                  1.9593247175216675,
+                  -1.1009832620620728,
+                  -2.909667491912842,
+                  -2.909667491912842,
+                  8.211848258972168,
+                  8.221293449401855,
+                  8.175921440124512,
+                  4.2042741775512695,
+                  4.2042741775512695,
+                  6.335416793823242,
+                  2.145880699157715,
+                  4.2038397789001465,
+                  4.2038397789001465,
+                  -3.316993236541748,
+                  -2.033456563949585,
+                  -0.8362897634506226,
+                  -1.960627555847168,
+                  -1.960627555847168,
+                  -1.960627555847168,
+                  -1.2831952571868896,
+                  -1.2831952571868896,
+                  -0.5888094902038574,
+                  -0.5320388078689575,
+                  5.884960312322764
+                ],
+                [
+                  -0.14857809245586395,
+                  -0.07785552740097046,
+                  -0.07785552740097046,
+                  -0.11938001960515976,
+                  -0.12604649364948273,
+                  -0.021420540288090706,
+                  -0.04572642222046852,
+                  -0.04572642222046852,
+                  -0.04572642222046852,
+                  -0.07557804882526398,
+                  -0.01580715924501419,
+                  -0.06183705851435661,
+                  -0.06183705851435661,
+                  -0.11789390444755554,
+                  -0.11705382913351059,
+                  -0.11619285494089127,
+                  -0.061043646186590195,
+                  -0.061043646186590195,
+                  -0.07489366084337234,
+                  -0.04714331775903702,
+                  -0.06096417456865311,
+                  -0.06096417456865311,
+                  1.4784015417099,
+                  2.35141921043396,
+                  9.953519821166992,
+                  -0.14281579852104187,
+                  -0.14281579852104187,
+                  -0.14281579852104187,
+                  -0.8663275241851807,
+                  -0.8663275241851807,
+                  -3.8283157348632812,
+                  -3.785588264465332,
+                  0.12366231869410874
+                ],
+                [
+                  -0.5247120261192322,
+                  -0.1883360892534256,
+                  -0.1883360892534256,
+                  -0.3720216453075409,
+                  -0.48026227951049805,
+                  -0.07260628789663315,
+                  -0.13785751163959503,
+                  -0.13785751163959503,
+                  -0.13785751163959503,
+                  -0.24612991511821747,
+                  -0.051509033888578415,
+                  -0.23414108157157898,
+                  -0.23414108157157898,
+                  -0.3560014069080353,
+                  -0.3531196117401123,
+                  -0.35151731967926025,
+                  -0.2140846699476242,
+                  -0.2140846699476242,
+                  -0.27189746499061584,
+                  -0.16184084117412567,
+                  -0.20882856845855713,
+                  -0.20882856845855713,
+                  -0.39270636439323425,
+                  -0.22881734371185303,
+                  -0.007023866754025221,
+                  4.644137859344482,
+                  4.644137859344482,
+                  4.644137859344482,
+                  -0.14542044699192047,
+                  -0.14542044699192047,
+                  -0.10322433710098267,
+                  -0.09495607763528824,
+                  0.3530688594478505
+                ],
+                [
+                  -0.3413527011871338,
+                  -0.1334880143404007,
+                  -0.1334880143404007,
+                  -0.2627584636211395,
+                  -0.3140625059604645,
+                  -0.04592379555106163,
+                  -0.09137038141489029,
+                  -0.09137038141489029,
+                  -0.09137038141489029,
+                  -0.16107986867427826,
+                  -0.03289756551384926,
+                  -0.15562745928764343,
+                  -0.15562745928764343,
+                  -0.25638124346733093,
+                  -0.2551039457321167,
+                  -0.2537977695465088,
+                  -0.14435754716396332,
+                  -0.14435754716396332,
+                  -0.17823119461536407,
+                  -0.11080151051282883,
+                  -0.14170938730239868,
+                  -0.14170938730239868,
+                  3.0174829959869385,
+                  -2.4884440898895264,
+                  -0.784207820892334,
+                  -0.09410315752029419,
+                  -0.09410315752029419,
+                  -0.09410315752029419,
+                  5.505921840667725,
+                  5.505921840667725,
+                  -0.8547834753990173,
+                  -0.8396534323692322,
+                  0.2556448577452913
+                ],
+                [
+                  -0.24153749644756317,
+                  -0.1258845180273056,
+                  -0.1258845180273056,
+                  -0.12359350919723511,
+                  -0.19782887399196625,
+                  -0.033389389514923096,
+                  -0.07148566097021103,
+                  -0.07148566097021103,
+                  -0.07148566097021103,
+                  -0.12559697031974792,
+                  -0.024709897115826607,
+                  -0.08464380353689194,
+                  -0.08464380353689194,
+                  -0.11356964707374573,
+                  -0.11033947765827179,
+                  -0.1071898564696312,
+                  -0.07777448743581772,
+                  -0.07777448743581772,
+                  -0.10622493177652359,
+                  -0.05874232202768326,
+                  -0.07275055348873138,
+                  -0.07275055348873138,
+                  1.5517735481262207,
+                  2.355214834213257,
+                  -3.7739944458007812,
+                  -0.023282380774617195,
+                  -0.023282380774617195,
+                  -0.023282380774617195,
+                  -0.8012058138847351,
+                  -0.8012058138847351,
+                  9.956513404846191,
+                  -3.8290860652923584,
+                  0.0774487177639519
+                ],
+                [
+                  -0.28860002756118774,
+                  -0.14988109469413757,
+                  -0.14988109469413757,
+                  -0.1390681117773056,
+                  -0.2361505627632141,
+                  -0.039282143115997314,
+                  -0.08424526453018188,
+                  -0.08424526453018188,
+                  -0.08424526453018188,
+                  -0.14931106567382812,
+                  -0.029119033366441727,
+                  -0.10025414824485779,
+                  -0.10025414824485779,
+                  -0.12538783252239227,
+                  -0.12126703560352325,
+                  -0.11727572232484818,
+                  -0.08675878494977951,
+                  -0.08675878494977951,
+                  -0.12641648948192596,
+                  -0.06951435655355453,
+                  -0.08022881299257278,
+                  -0.08022881299257278,
+                  1.600648283958435,
+                  2.395827293395996,
+                  -3.797421455383301,
+                  -0.03207327052950859,
+                  -0.03207327052950859,
+                  -0.03207327052950859,
+                  -0.7943176031112671,
+                  -0.7943176031112671,
+                  -3.752117872238159,
+                  9.959284782409668,
+                  -0.014797446323154485
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "tchau"
+      ],
+      [
+        "pt",
+        "tchau se cuide"
+      ],
+      [
+        "pt",
+        "tchau tchau"
+      ],
+      [
+        "pt",
+        "tchau tchau se cuide"
+      ],
+      [
+        "pt",
+        "goodbye"
+      ],
+      [
+        "pt",
+        "bye"
+      ],
+      [
+        "pt",
+        "bye se cuide"
+      ],
+      [
+        "pt",
+        "bye bye"
+      ],
+      [
+        "pt",
+        "bye bye se cuide"
+      ],
+      [
+        "pt",
+        "ok vejo você mais tarde"
+      ],
+      [
+        "pt",
+        "okay vejo você mais tarde"
+      ],
+      [
+        "pt",
+        "devo ir"
+      ],
+      [
+        "pt",
+        "olá"
+      ],
+      [
+        "pt",
+        "oi"
+      ],
+      [
+        "pt",
+        "hello"
+      ],
+      [
+        "pt",
+        "bom dia"
+      ],
+      [
+        "pt",
+        "boa tarde"
+      ],
+      [
+        "pt",
+        "boa noite"
+      ],
+      [
+        "pt",
+        "tudo bem"
+      ],
+      [
+        "pt",
+        "qual o endereco"
+      ],
+      [
+        "pt",
+        "tem alguma referencia"
+      ],
+      [
+        "pt",
+        "qual a cidade"
+      ],
+      [
+        "pt",
+        "qual o estado"
+      ],
+      [
+        "pt",
+        "qual o pais"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "saudacoes.tchau": [
+          {
+            "answer": "Até mais"
+          },
+          {
+            "answer": "Vejo você depois!"
+          }
+        ],
+        "saudacoes.ola": [
+          {
+            "answer": "Olá! Sou um bot virtual, tudo bem?"
+          },
+          {
+            "answer": "Saudações!"
+          },
+          {
+            "answer": "Bom dia!"
+          },
+          {
+            "answer": "Boa Tarde!"
+          },
+          {
+            "answer": "Boa Noite!"
+          }
+        ],
+        "localizacao.endereco": [
+          {
+            "answer": "Estamos localizado na rua 1!"
+          },
+          {
+            "answer": "Estamos localizado na rua x!"
+          }
+        ],
+        "localizacao.referencia": [
+          {
+            "answer": "Referencia proximo à esquina 1!"
+          },
+          {
+            "answer": "Referencia proximo à esquina x!"
+          }
+        ],
+        "localizacao.cidade": [
+          {
+            "answer": "Cidade 1!"
+          }
+        ],
+        "localizacao.estado": [
+          {
+            "answer": "Estado 1!"
+          }
+        ],
+        "localizacao.pais": [
+          {
+            "answer": "Pais 1!"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
